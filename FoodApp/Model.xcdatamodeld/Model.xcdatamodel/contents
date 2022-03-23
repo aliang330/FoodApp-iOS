@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19574" systemVersion="21A559" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="PhotoEntry" representedClassName="PhotoEntry" syncable="YES">
+        <attribute name="caption" attributeType="String"/>
+        <attribute name="dateAdded" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="imageUrl" attributeType="String"/>
+        <attribute name="restaurantID" attributeType="String"/>
+    </entity>
+    <entity name="WishListEntry" representedClassName="WishListEntry" syncable="YES">
+        <attribute name="dateAdded" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="restaurantAddress" attributeType="String"/>
+        <attribute name="restaurantID" attributeType="String"/>
+        <attribute name="restaurantImagePath" attributeType="String"/>
+        <attribute name="restaurantImageUrl" optional="YES" attributeType="String"/>
+        <attribute name="restaurantName" attributeType="String"/>
+        <attribute name="restaurantUrlString" optional="YES" attributeType="String"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="restaurantID"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <elements>
+        <element name="PhotoEntry" positionX="-63" positionY="-18" width="128" height="89"/>
+        <element name="WishListEntry" positionX="-54" positionY="18" width="128" height="164"/>
+    </elements>
+</model>
